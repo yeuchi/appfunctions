@@ -2,15 +2,29 @@
 
 This repository contains Android sample code demonstrating the usage of [AppFunctions](https://developer.android.com/ai/appfunctions) to provide application functionality to system services and agents.
 
-## Samples
+## Projects
 
-### ChatApp
+This repository contains two primary projects. An API sample and a testing agent.
 
-The **ChatApp** sample showcases how a communication app can provide its core features to the Android intelligence system.
-It is a functional chat application built with [Jetpack Compose](https://developer.android.com/jetpack/compose) and [Hilt](https://developer.android.com/training/dependency-injection/hilt-android).
+### 1. ChatApp sample
+
+The **ChatApp** sample showcases how a communication app can provide its core features to the Android intelligence system. It serves as an educational reference for implementing AppFunctions.
+It is a functional chat application built with [Jetpack Compose](https://developer.android.com/jetpack/compose) and [Hilt](https://developer.android.com/training/dependency-injection/hilt-android), demonstrating AppFunctions usage across both mobile and Wear OS form factors.
 
 - **Location**: [ChatApp](ChatApp/)
+- **Structure**:
+    - `app`: Main mobile chat application.
+    - `wear`: Wear OS companion chat application.
+    - `shared`: Common data repositories, ViewModels, and AppFunction service definitions.
 - **Features**: Sending messages, searching contacts, and initiating calls via AppFunctions.
+
+### 2. AppFunctions Testing Agent
+
+The **AppFunctions Testing Agent** is a testing and debugging tool for Android AppFunctions. It is designed to help developers verify their integrations, troubleshoot execution issues, and evaluate AppFunctions using both manual deterministic inputs and an LLM-based agent.
+
+- **Location**: [agent](agent/)
+- **Documentation**: See the [Agent README](agent/README.md) for full building, running, and testing instructions.
+- **Features**: Privileged AppFunction execution, manual debugging, test automation, and LLM agent evaluations.
 
 ## Setup Guide
 
@@ -26,9 +40,9 @@ Follow these steps to explore and run the samples:
     ```
 3.  **Open in Android Studio**:
     - Open Android Studio and select **Open**.
-    - Navigate to the specific sample directory (e.g., [`ChatApp`](ChatApp/) and click **OK**.
+    - Navigate to the specific project directory (e.g., [`ChatApp`](ChatApp/) or [`agent`](agent/)) and click **OK**.
 4.  **Sync and Build**: Wait for the Gradle sync to complete and build the project (**Build > Make Project**).
-5.  **Run**: Click **Run > Run 'app'** to deploy the sample to your device.
+5.  **Run**: For `ChatApp`, click **Run > Run 'app'** to deploy the mobile sample to your phone/emulator, or **Run > Run 'wear'** to deploy the companion app to a Wear OS device/emulator. For `agent`, refer to the [Agent README](agent/README.md) for privileged launch instructions (`./run_privileged.sh`).
 
 ## Contributing
 
