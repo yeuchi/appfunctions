@@ -11,10 +11,10 @@ This repository contains two primary projects. An API sample and a testing agent
 
   <img width="250" alt="Screenshot 2026-06-14 at 3 10 53 PM" src="https://github.com/user-attachments/assets/16cdcf07-b498-4321-a453-bdbe6afee181" />
 
-- Agent requires the following.
-  a.  Manifest permission: <uses-permission android:name="android.permission.EXECUTE_APP_FUNCTIONS"/>
-  b.  Your own Gemini API Key
-  c.  Launch via script: ./run_privileged.sh --build --flavor retail --api-key
+- Agent requires the following. \
+  a.  Manifest permission: <uses-permission android:name="android.permission.EXECUTE_APP_FUNCTIONS"/> \
+  b.  Your own Gemini API Key \
+  c.  Launch via script: ./run_privileged.sh --build --flavor retail --api-key 
   
   <img width="600" alt="Screenshot 2026-06-14 at 3 10 44 PM" src="https://github.com/user-attachments/assets/e93bd313-0cb4-468f-92c4-4e402e323e90" />
 
