@@ -14,8 +14,8 @@ This repository contains two primary projects. An API sample and a testing agent
 - Agent requires the following. \
   a.  Manifest permission: <uses-permission android:name="android.permission.EXECUTE_APP_FUNCTIONS"/> \
   b.  Your own Gemini API Key \
-  c.  Launch via script: ./run_privileged.sh --build --flavor retail --api-key 
-  
+  c.  Launch via script: ./run_privileged.sh --build --flavor retail --api-key \
+      Debug launch produces below error "The app does not have EXECUTE_APP_FUNCTIONS permission" \
   <img width="600" alt="Screenshot 2026-06-14 at 3 10 44 PM" src="https://github.com/user-attachments/assets/e93bd313-0cb4-468f-92c4-4e402e323e90" />
 
 
